@@ -1,0 +1,119 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.timer_block {
+  width: 150px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.timer_block .time {
+  background-color: #396fe4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  height: 150px;
+  font-size: 95px;
+}
+
+.timer_block .title {
+  background-color: #e29015;
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.buttons .button {
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 10px;
+  width: 180px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+
+.buttons .button.start, .buttons .button.pause {
+  color: #396fe4;
+}
+
+.buttons .button.start:hover, .buttons .button.pause:hover {
+  background-color: #e29015;
+  color: white;
+}
+
+.buttons .button.start.stop:hover, .buttons .button.pause.stop:hover {
+  background-color: #f31616;
+  color: white;
+}
+
+.buttons .button.start.new:disabled, .buttons .button.pause.new:disabled {
+  background-color: none;
+  cursor: not-allowed;
+}
+
+.results_block {
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+  width: 250px;
+  border: 1px solid #e29015;
+  color: #396fe4;
+  font-size: 16px;
+  padding: 15px;
+  text-align: center;
+}
+
+.results_block .results_info {
+  margin: 10px 0;
+}
+/*# sourceMappingURL=main.css.map */
